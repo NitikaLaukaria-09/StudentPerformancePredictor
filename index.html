@@ -1,0 +1,63 @@
+<!DOCTYPE html><html>
+<head>
+    <title>Student Performance Predictor</title>
+</head>
+<body>
+<link rel="stylesheet" href="style.css">
+<h1 align="center">Student Performance Predictor</h1>
+
+<p align="center">
+    Enter student details below to predict academic performance.
+</p>
+
+<hr>
+
+<form id="predictForm"
+
+    <label>Study Hours (per day):</label>
+    <br>
+    <input type="number" name="study_hours"
+           placeholder="e.g., 5.5" step="0.1" min="0" required>
+    <br><br>
+
+    <label>Previous Score (out of 100):</label>
+    <br>
+    <input type="number" name="previous_score"
+           placeholder="e.g., 75" min="0" max="100" required>
+    <br><br>
+
+    <label>Attendance (%):</label>
+    <br>
+    <input type="number" name="attendance"
+           placeholder="e.g., 85" min="0" max="100" required>
+    <br><br>
+
+    <label>Sleep Hours (per night):</label>
+    <br>
+    <input type="number" name="sleep_hours"
+           placeholder="e.g., 7" step="0.1" min="0" max="24" required>
+    <br><br>
+
+    <label>Taking Extra Tutoring?</label>
+    <br>
+    <select name="tutoring" required>
+        <option value="">Select option</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+    </select>
+
+    <br><br>
+
+    <button type="submit">Predict Performance</button>
+
+
+</form>
+
+<hr>
+
+<h2>Prediction Result</h2>
+
+<p>Your predicted performance grade will appear here.</p>
+<script src="script.js"></script>
+</body>
+</html>
